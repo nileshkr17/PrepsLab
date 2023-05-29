@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:ital,wght@0,400;1,800&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@500&family=Rubik+Iso&family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Roboto;
+    letter-spacing: 1px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4rem;
+    align-items: center;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2/1fr;
+    /* border: 3px red solid; */
+
+}
+hr{
+    margin:0 5px 10px 5px;
+}
+.profile>img{
+    margin: 30px auto;
+    border-radius: 3px;
+    border: 6px solid rgb(71, 71, 236);
+    padding: 3px;
+}
+span{
+    font-size:6rem;
+    margin:  0 auto;
+    font-weight: 600;
+    background-image: 
+   linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+p{
+    font-size:4rem;
+    font-weight: 600;
+    text-align: center;
+    background-image: 
+    linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+.container{
+    min-height: 98vh;
+}
+
+.stack-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .box {
+    width:250px ;
+    height: 230px;
+    padding: 10px;
+  }
+
+  .gif {
+    width: 100%;
+    height: 100%;
+  }
+  .box>img{
+    border-radius: 3px;
+  }
+  .about{
+   margin: 0 auto;
+  }
+  .text1,.text2,.text3,.text4{
+    text-align: justify;
+    width: 60%;
+    margin: 0 auto;
+
+  }
+
+  .text1::first-letter{
+    font-size: 400%;
+    color: #2be22e;
+  }
+  .text2::first-letter{
+    font-size: 400%;
+    color: rgb(215, 199, 27);
+  }
+
+  .text3::first-letter{
+    font-size: 400%;
+    color: rgb(6, 120, 157);
+  }
+
+  .text4::first-letter{
+    font-size: 400%;
+    color: #C850C0;
+  }
+
+  .social{
+top: 0;
+    text-align: center;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-github {
+    background: black;
+    color: white;
+  }
