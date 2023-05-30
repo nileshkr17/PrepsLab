@@ -3,12 +3,16 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Poppins;
+    font-family: Lato, sans-serif;
     box-sizing: border-box;
     
 }
-
-
+span{
+    color: rgb(56, 56, 206);
+}
+.content>p{
+    color: #000;
+}
 .profile{
     position: relative;
 }
@@ -27,9 +31,10 @@
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: violet;
+    background-color: black;
     text-align: center;
     padding: 20px;
+    color: white;
 }
 h3{
     font-size: 2rem;
@@ -43,14 +48,48 @@ h3{
     position: relative;
     top: 0;
     width: 100%;
-    z-index: -1;
+    
 }
 .footer{
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: -1;
-    background-color: aqua;
+    background-color: black;
+    color: white;
     padding: 20px;
     text-align: center;
+}
+.article{
+    margin: 0 auto;
+    width: 50%;
+    height: 70vh;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-top: 5rem;
+
+}
+.article>.header{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+p{
+    margin-top: 20px;
+    color: black;
+    position: absolute;
+    text-align: justify;
+    letter-spacing: 1px;
+    
+}
+p::first-letter{
+    font-size: 200%;
+    color: #000;
+}
+
+h5{
+    color: white;
+    position:relative;
 }
