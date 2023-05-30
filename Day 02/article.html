@@ -9,8 +9,20 @@
   </head>
   <body>
     <div class="sticky">
+        <div class="left">
+            <li>Logo</li>
+            <li>Home</li>
+        </div>
+        <div class="right">
+            <li>Profile</li>
+            <li>Support</li>
+            <li>Logout</li>
+        </div>
       <h2>Learning <span>ReactJS</span> with Nilesh</h2>
+
     </div>
+
+
     <div class="article">
       <div class="header">BLOG - Introduction</div>
       <hr />
@@ -43,6 +55,36 @@
           navigation links. Create a folder inside of ./src named containers;
           this is where we will place smart “containing” components.
         </p>
+      </div>
+      <div class="content">
+        <p>
+            The key here is that we have a const variable named App which is of
+            type React.FC or Functional Component. React promotes 2 types of
+            components: Class Components and Functional Components. The idea of a
+            Functional Component is that it is a pure function; pure meaning - its
+            return value is only determined by the input values (it does not
+            use-values outside of those passed to it as input), its return values
+            are always the same given the same input. Pure functions are the way
+            to be as they are much easier to encapsulate, test, maintain, and
+            read. By design, functional components are stateless; meaning they do
+            not have access to state or have a lifcecyle; this was until the
+            addition of hooks in React 16.8. Now with hooks, we can use React
+            Functional Components that interact with our state as well. Hooks are
+            amazing and I will be writing another post about hooks in this article
+            series; stay tuned. React works on the component concept that allows
+            us to build components and then compose them together. Our App
+            component defined here will be our top-level component where we will
+            compose our other components as children. I like to think of this as
+            our App shell where we can define components that will be shared
+            across our app; things such as our app header, with navigation,
+            authenticated user info, etc; an app footer if needed, our top-level
+            route definitions if needed; etc. We will build a couple of components
+            in this article and add them to this App component. App Header To
+            start, let’s create a header component that will sit at the top of our
+            app; show the app title, a short description, and a couple of
+            navigation links. Create a folder inside of ./src named containers;
+            this is where we will place smart “containing” components.
+          </p>
       </div>
     </div>
 
