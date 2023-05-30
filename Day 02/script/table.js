@@ -1,5 +1,5 @@
 const button1 = document.getElementById("clickable1");
-const button2 = document.getElementById("clickable2");
+const hide = document.getElementById("clickable2");
 const table = document.querySelector("tbody");
 
  button1.addEventListener("click", () => {
@@ -13,3 +13,9 @@ const table = document.querySelector("tbody");
     tr.append(td1,td2,td3);
     table.append(tr);
 });
+
+hide.addEventListener("click", () => {
+    const tr = document.querySelector("tr");
+    tr.remove();
+}
+);
