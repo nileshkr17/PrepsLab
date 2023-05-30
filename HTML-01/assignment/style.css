@@ -53,6 +53,17 @@ p{
   color: transparent;
   
 }
+.checkout>p{
+    font-size:4rem;
+    font-weight: 600;
+    text-align: center;
+    background-image: 
+    linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
 .container{
     min-height: 98vh;
 }
