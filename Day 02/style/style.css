@@ -8,8 +8,9 @@
     list-style: none;
 
 }
-span{
+.react-js{
     color: rgb(56, 56, 206);
+    display: inline;
 }
 .content>p{
     color: #000;
@@ -82,7 +83,7 @@ button{
 } */
 .article{
     margin: 0 auto;
-    width: 50%;
+    width: 65%;
     padding: 10px;
     background-color: whitesmoke;
     margin-top: 5rem;
@@ -128,4 +129,7 @@ h5{
 }
 .right>li{
     margin-left: 10px;
+}
+#more {
+    display: none;
 }
