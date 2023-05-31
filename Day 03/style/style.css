@@ -23,9 +23,20 @@
     cursor: pointer;
     margin-top: 8rem;
     border-radius: 4px;
+    border: 6px solid rgb(30, 185, 59);
+    padding: 3px;
 
 }
-
+button{
+    background-color: rgb(30, 185, 59);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .nav{
     position: fixed;
     top: 0;

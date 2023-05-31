@@ -42,6 +42,13 @@ for(let i =0; i<data.length;i++)
     movieTitle.innerText = data[i].title;
     const rating = document.createElement("h4");
     rating.innerText = data[i].rating;
-    div.append(image,movieTitle,rating);
+    button = document.createElement("button");
+    button.innerText = "Play Now";
+    button.addEventListener("click",function(){
+        // alert("Play"+data[i].title+" now!");
+        alert(`Play ${data[i].title} now!` );
+    })
+
+    div.append(image,movieTitle,rating,button);
     movie_box.append(div);
 }
