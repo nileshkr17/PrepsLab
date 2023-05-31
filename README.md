@@ -1,6 +1,10 @@
 # MERN Starter Kit
 
 This is a starter kit for building web applications using the MERN stack: MongoDB, Express.js, React.js, and Node.js. It provides a basic structure and setup to help you get started quickly.
+-02
+![screencapture-127-0-0-1-5500-Day-03-assignment-index-html-2023-06-01-00_12_28](https://github.com/nileshkr17/PrepsLab/assets/77370375/98f38e90-6d83-43e1-8063-8f849178d9b8)
+
+-01
 ![assignment-2-gif](https://github.com/nileshkr17/PrepsLab/assets/77370375/9abd3f4a-e994-44db-bb90-f7505320a2bb)
 
 
