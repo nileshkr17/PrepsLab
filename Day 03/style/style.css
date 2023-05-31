@@ -15,6 +15,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 10px;
+    /* background-color: rgb(223, 228, 228); */
 }
 #showmovie img{
     width: 250px;
@@ -25,6 +26,7 @@
     border-radius: 4px;
     border: 6px solid rgb(30, 185, 59);
     padding: 3px;
+    
 
 }
 button{

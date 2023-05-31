@@ -15,18 +15,18 @@ const data = [
         rating: 9.2
     },
     {
-        image: "https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg",
-        title : "The Godfather",
+        image: "https://upload.wikimedia.org/wikipedia/en/6/66/Wednesday_Netflix_series_poster.png",
+        title : "Wednesday",
         rating: 9.2
     },
     {
         image: "https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg",
-        title : "The Godfather",
+        title : "Fast and Furious 9",
         rating: 9.2
     },
     {
-        image: "https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg",
-        title : "The Godfather",
+        image: "https://upload.wikimedia.org/wikipedia/en/a/a0/Hellbound_TV_series.jpg",
+        title : "Hellbound",
         rating: 9.2
     }
 ];
@@ -44,7 +44,7 @@ for(let i =0; i<data.length;i++)
     rating.innerText = data[i].rating;
     button = document.createElement("button");
     button.innerText = "Play Now";
-    button.addEventListener("click",function(){
+    button.addEventListener("click",()=>{
         // alert("Play"+data[i].title+" now!");
         alert(`Play ${data[i].title} now!` );
     })
