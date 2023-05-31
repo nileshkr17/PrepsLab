@@ -15,7 +15,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 10px;
-    /* background-color: rgb(223, 228, 228); */
+    background-color: rgb(223, 228, 228);
 }
 #showmovie img{
     width: 250px;
@@ -69,4 +69,15 @@ button{
 }
 .right>li{
     margin-left: 10px;
+}
+.footer{
+    background-color: rgb(30, 185, 59);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
 }
