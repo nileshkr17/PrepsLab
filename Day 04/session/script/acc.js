@@ -14,19 +14,10 @@ button.addEventListener("click", () => {
         id: Date.now(),
         email: emailinput,
         password: pass,
-      }),
-    })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        alert("Account created sucessfully");
       })
-      .catch(err => {
-        console.log(err);
-      });
+    }) 
   } else {
     error.innerHTML = "Please fill all the fields";
   }
   console.log(emailinput, pass);
 });
-
