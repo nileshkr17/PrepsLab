@@ -1,39 +1,5 @@
 {
   "employees": [
-    {
-      "id": 1685612738630,
-      "email": "new@new",
-      "password": "new"
-    },
-    {
-      "id": 1685612816934,
-      "email": "admin@hrms",
-      "password": "asdfghjkl"
-    },
-    {
-      "id": 1685612939343,
-      "email": "firoxag154@pyadu.com",
-      "password": "sdfghj"
-    },
-    {
-      "id": 1685613044223,
-      "email": "demo@mail.com",
-      "password": "asdas"
-    },
-    {
-      "id": 1685613108905,
-      "email": "admin@hrms",
-      "password": "qwerty"
-    },
-    {
-      "id": 1685613254696,
-      "email": "D@mail.com",
-      "password": "qwerty"
-    },
-    {
-      "id": 1685613483671,
-      "email": "demo@mail.com",
-      "password": "asda"
-    }
+   
   ]
 }

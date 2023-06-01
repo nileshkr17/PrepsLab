@@ -47,30 +47,6 @@
       "rating": "2.5",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg/1280px-Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
       "desc": "Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish."
-    },
-    {
-      "id": 1685636683827,
-      "title": "Egg Roll",
-      "price": "69",
-      "description": "It is a cylindrical, savory roll with shredded cabbage, chopped meat, or other fillings inside a thickly-wrapped wheat flour skin, which is fried in hot oil.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/CookbookEggrollTongs.jpg",
-      "rating": "4/5"
-    },
-    {
-      "id": 1685637324247,
-      "title": "Easd",
-      "price": "21",
-      "description": "asdas",
-      "image": "https://youtu.be/MqZMAjAdFKU",
-      "rating": "3/5"
-    },
-    {
-      "id": 1685637631328,
-      "title": "naya",
-      "price": "21",
-      "description": "ajsdhasd",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/CookbookEggrollTongs.jpg",
-      "rating": "9/2"
     }
   ]
 }

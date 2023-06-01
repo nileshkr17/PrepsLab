@@ -1,5 +1,5 @@
 
-fetch("http://localhost:3004/menu",{
+fetch("http://localhost:3001/menu",{
     method: "GET",
 }).then((response)=>response.json()).then((menu)=>{
     console.log(menu);
