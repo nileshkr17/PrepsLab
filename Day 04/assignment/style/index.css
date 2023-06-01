@@ -105,3 +105,89 @@ a:active{
 p{
     display: none;
 }
+
+/* responsive for mobile */
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .left{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right{
+        float: none;
+        width: 100%;
+    }
+    .left>li{
+        margin-right: 0px;
+    }
+    .right>li{
+        margin-left: 0px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .menu-parent{
+        width: 100%;
+        margin: 0px auto;
+    }
+    #menu-box{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    p{
+        display: block;
+    }
+    .sticky{
+        position: static;
+    }
+    .footer{
+        position: static;
+    }
+}
+
+/* responsive for tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        width: 100%;
+    }
+    .left{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right{
+        float: none;
+        width: 100%;
+    }
+    .left>li{
+        margin-right: 0px;
+    }
+    .right>li{
+        margin-left: 0px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .menu-parent{
+        width: 100%;
+        margin: 0px auto;
+    }
+    #menu-box{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    p{
+        display: block;
+    }
+    .sticky{
+        position: static;
+    }
+    .footer{
+        position: static;
+    }
+}
+

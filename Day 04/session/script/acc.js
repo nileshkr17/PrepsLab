@@ -1,6 +1,6 @@
 const button = document.getElementById("mybutton");
 const error = document.getElementById("error");
-const sucess = document.getElementById("sucess");
+const success = document.getElementById("sucess");
 button.addEventListener("click", () => {
   const emailinput = document.getElementById("email").value;
   const pass = document.getElementById("password").value;
