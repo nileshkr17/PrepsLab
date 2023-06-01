@@ -1,5 +1,19 @@
 {
   "employees": [
-    
+    {
+      "id": 1685609755022,
+      "email": "admin@hrms",
+      "password": "asdfghjk"
+    },
+    {
+      "id": 1685609780233,
+      "email": "admin@hrms",
+      "password": "asdfgh"
+    },
+    {
+      "id": 1685610392800,
+      "email": "admin@hrms",
+      "password": "sdfghjk"
+    }
   ]
 }
