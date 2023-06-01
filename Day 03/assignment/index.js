@@ -84,11 +84,13 @@ for(let i =0; i<menu.length;i++)
         {
             desc.style.display = "block";
             read.innerText = "Read Less";
+           
         }
         else
         {
             desc.style.display = "none";
             read.innerText = "Read More";
+            
         }
     }
     )
