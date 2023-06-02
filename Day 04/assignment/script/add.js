@@ -27,9 +27,10 @@ add.addEventListener("click", () => {
         image: image,
         rating: rating,
       }),
-    });
-    success.innerHTML = "Item added sucessfully";
-    alert("Item added sucessfully");
+    }).then((response) => response.json());
+    success.innerHTML = "Item added successfully";
+    alert("Item added successfully");
+    
   }else{
     error.innerHTML = "Please fill all the fields";
     alert("Please fill all the fields");

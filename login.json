@@ -1,5 +1,16 @@
 {
   "employees": [
-   
+    {
+      "id": 1685647324883,
+      "name": "nileshkr17",
+      "email": "ece.20becd76@silicon.ac.in",
+      "password": "qwerty"
+    },
+    {
+      "id": 1685648066217,
+      "name": "mainaibolta",
+      "email": "firoxag154@pyadu.com",
+      "password": "qwerty"
+    }
   ]
 }
