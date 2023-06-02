@@ -33,7 +33,19 @@ button{
 a:active{
     color: black;
 }
-
+span{
+    color: black;
+}
+.badge{
+    color: #241f42;
+    border: none;
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .sticky{
     font-weight: 600;
     position: fixed;
