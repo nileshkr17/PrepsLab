@@ -15,6 +15,7 @@ login.addEventListener("click", () => {
             );
             if (user) {
             success.innerHTML = "Login sucessfull";
+                localStorage.setItem("userid",username);  
             window.location.href = "../index.html";
             } else {
             error.innerHTML = "Invalid credentials";

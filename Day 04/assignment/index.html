@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodhub</title>
-    <link  type="text/css" rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- Nav-bar -->
     <div class="sticky">
@@ -16,13 +20,12 @@
                 <img src="./assets/logo.svg" class="logo" alt="logo">
             </div>
             <div class="right">
-                <li><i class="fa-solid fa-user-check " style="color: green;"></i>Profile</li>
-                <!-- <li><i class="fa-solid fa-"></i>Support</li> -->
-                <li><i class="fa-solid fa-sign-out "></i> <a href="./pages/login.html">Logout</a> </li>
+                <li><i class="fa-solid fa-user-check " style="color: green;"></i>
+                    <div id="id"></div>
+                </li>
+                <li id="logout"><i class="fa-solid fa-sign-out "></i> <a href="./pages/login.html">Logout</a> </li>
                 <li id=""><i class="fa-solid fa-bag-shopping"></i></li>
-                <!-- shopping bag icon with number -->
                 <span class="badge">0</span>
-            
                 <li id="add"><i class="fa-solid fa-add "></i><a href="./pages/add.html">Add Items</a></li>
             </div>
         </div>
@@ -33,10 +36,15 @@
         </div>
     </div>
     <!-- Footer -->
-    <div class="footer">
-        <h5>Made with ❤️ by <a href="https://github.com/nileshkr17">Nileshkr17</a>  </h5>
+    <div class="footer" id="footer">
+        <h5>Made with ❤️ by <a href="https://github.com/nileshkr17">Nileshkr17</a> </h5>
+    </div>
+    <div id="pagenotfound">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
     </div>
 </body>
 <script src="./script/index.js"></script>
 <script src="./script/update.js"></script>
+
 </html>

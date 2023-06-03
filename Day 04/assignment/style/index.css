@@ -36,6 +36,10 @@ a:active{
 span{
     color: black;
 }
+#pagenotfound{
+    display: none;
+}
+
 .badge{
     color: #241f42;
     border: none;
