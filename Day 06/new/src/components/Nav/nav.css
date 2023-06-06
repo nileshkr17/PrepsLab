@@ -41,17 +41,19 @@ ul{
 
 }
 ul>li{
-    width: 200px;
+    width: 230px;
     height: 100%;
     padding: 10px 0;
   /* border: red solid 1px; */
-    text-align: center;
-    line-height: 60px;
-    font-size: 30px;
+    text-align: left;
+    line-height: 80px;
+    font-size: 35px;
     color: #333;
     cursor: pointer;
+
 }
 .logo>img{
+    height: 200px;
     width: 100%;    
 }
 
