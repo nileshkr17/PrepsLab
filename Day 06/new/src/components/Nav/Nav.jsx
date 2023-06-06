@@ -22,8 +22,8 @@ const Nav = () => {
                 <li> <span className="icon"><AiOutlineUser/></span> <a href="#">Profile</a></li>
                 <li> <span className="icon"><FaRegPaperPlane/></span>  <a href="#">Chat</a></li>
                 <li> <span className="icon"><IoSettingsOutline/></span>  <a href="#">Settings</a></li>
-                <Toggle/>
-                
+                <li><Toggle/>
+                 </li>
             </ul>
         </nav>
     </>

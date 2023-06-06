@@ -9,15 +9,13 @@
     width: 50px;
     height: 25px;
     border-radius: 25px;
-    background-color: #ccc;
+    background-color: #1b1a1a;
     cursor: pointer;
     transition: background-color 0.5s;
 
 }
 
-
-#toggle::before{
-    content: '';
+#toggle .indicator{
     position: absolute;
     top: 2px;
     left: 2px;
@@ -25,9 +23,9 @@
     height: 21px;
     border-radius: 50%;
     background-color: #fff;
-    transition: transform 0.5s;
+    transition: left 0.5s;  
 }
-
-#toggle:checked{
-    background-color: #2ecc71;
+#toggle.active .indicator{
+    left: 27px;
+    
 }
