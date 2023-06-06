@@ -24,6 +24,7 @@ body{
   max-width: 600px;
   width: 100%;
 }
+.card-footer 
 
 .card-header{
   display: flex;

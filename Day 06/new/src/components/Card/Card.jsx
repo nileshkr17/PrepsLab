@@ -22,8 +22,6 @@ const Card = () => {
         <div className="card-footer">
           <div className="icons">
             <FcLike />
-            <FcLike />
-            <FcLike />
           </div>
           <div className="caption">
             <h3>Nileshkr17</h3>

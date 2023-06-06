@@ -3,25 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-/* toggle button */
-.toggle{
-    background-color: black;
-    padding: 7px;
-    width: 70%;
-    border-radius: 10px;
-}
-/* input css */
-.toggle input{
-    display: none;
-}
-#input-toggle{
+#toggle{
+    position:relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #ccc;
     cursor: pointer;
-    position: relative;
-    display: inline-block;
-    width: 34px;
-    float: left;
-    height: 34px;
-    border-radius: 100%;
-    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s;
+
+}
+
+
+#toggle::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.5s;
+}
+
+#toggle:checked{
+    background-color: #2ecc71;
 }

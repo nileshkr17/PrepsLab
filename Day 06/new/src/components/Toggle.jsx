@@ -6,8 +6,7 @@ const Toggle = () => {
     // toggle button
     <>
         <div className="toggle">
-            <input type="checkbox" id="toggle" />
-            <label htmlFor="toggle" id="input-toggle"></label>
+          <i className="indicator"></i>
         </div>
     </>
   )
