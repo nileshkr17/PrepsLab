@@ -14,12 +14,10 @@ const getData=async()=>{
     // select only 10 data
     data=data.slice(0,10);
     setArr(data);
-
   })
   }
   useEffect(()=>{
     getData();
-    
 },[])
   return (
     <div className="card-heading">
@@ -36,8 +34,7 @@ const getData=async()=>{
 
                  </div>
               )
-            }
-            )
+            })
             }
 
        
