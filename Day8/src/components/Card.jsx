@@ -14,7 +14,7 @@ const getData=async()=>{
     // select only 10 data
     data=data.slice(0,10);
     setArr(data);
-    
+
   })
   }
   useEffect(()=>{
@@ -27,11 +27,11 @@ const getData=async()=>{
        {/* fetch arr map */}
          {arr.map((item)=>{
               return(
-                 <div className="card">
+                 <div className="card" key={item.id}>
                     <img src={item.url} alt="img" width={200}/>
                 <h1>{item.title}</h1>
                 <p>{item.body}</p>
-                <button onClick={item.thumbnailUrl}>Source</button>
+                <button  href={item.thumbnailUrl}>Source</button>
                 <button onClick={getData}>Click me!</button>
 
                  </div>
