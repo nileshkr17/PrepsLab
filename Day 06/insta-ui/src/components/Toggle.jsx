@@ -23,7 +23,6 @@ const Toggle = () => {
         localStorage.removeItem('theme')
       } 
     })
-    
   return (
     // toggle button
     <>
