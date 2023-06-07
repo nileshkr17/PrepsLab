@@ -1,17 +1,46 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useEffect, useState} from 'react'
 
 const Card = () => {
-    const [change, setChange] = useState(false)
-    const handleclick = () => {
-        setChange(true);
-    }
+const [arr,setArr] = useState([]);
+
+const getData=async()=>{
+  await fetch('https://jsonplaceholder.typicode.com/photos',
+  {
+    method:'GET',
+  }
+    )
+  .then((response)=>response.json())
+  .then((data)=>{
+    // select only 10 data
+    data=data.slice(0,10);
+    setArr(data);
     
+  })
+  }
+  useEffect(()=>{
+    getData();
+    
+},[])
   return (
-    <div className="card">
+    <div className="card-heading">
        <h1>State Management</h1>
-       {change===true ? <p>Changed!</p> : <p>Not Changed!</p>}
-       <button onClick={handleclick}>Click me!</button>
+       {/* fetch arr map */}
+         {arr.map((item)=>{
+              return(
+                 <div className="card">
+                    <img src={item.url} alt="img" width={200}/>
+                <h1>{item.title}</h1>
+                <p>{item.body}</p>
+                <button onClick={item.thumbnailUrl}>Source</button>
+                <button onClick={getData}>Click me!</button>
+
+                 </div>
+              )
+            }
+            )
+            }
+
+       
     </div>
   )
 }
