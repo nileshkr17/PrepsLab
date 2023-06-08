@@ -7,20 +7,7 @@
       "address":"New York",
       "email":"nileshkr1706@gmail.com"
 
-    },
-    {
-      "name":"Saheel Saha",
-      "age":30,
-      "imageUrl":"https://www.w3schools.com/howto/img_avatar.png",
-      "address":"LA California",
-      "email":"SaheelBKL@gmail.com"
-    },
-    {
-      "name":"Sonali Kumari",
-      "age":25,
-      "imageUrl":"https://www.w3schools.com/howto/img_avatar.png",
-      "address":"New York",
-      "email":"BhattaBKL@gmail.com"
     }
+
   ]
 }

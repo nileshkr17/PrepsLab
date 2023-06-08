@@ -8,7 +8,7 @@ const Card = ({image,username,useremail,onclick,key})=> {
             <div className="container">
                 <h4><b>{username}</b></h4>
                 <p>{useremail}</p>
-                <button onClick={onclick}>Delete</button>
+                {/* <button >Delete</button> */}
             </div>
         </div>
     </>
