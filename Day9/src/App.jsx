@@ -1,33 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+ const [arr, setArr] = useState([]);
+  const getData = async()=>{
+    const response = await fetch("http://localhost:3004/users",{
+      method:"GET",
+      headers:{
+        "Content-Type":"application/json"
+      }
+    });
+
+    const data = await response.json();
+    console.log(data);
+    setArr(data);
+  }
+
+  useEffect(() => {
+    getData();
+  }, [])  
+
+
+const obj = {
+  name:"Sonali Kumari",
+  age:20,
+  imageUrl:"https://www.w3schools.com/howto/img_avatar.png",
+  address:"New York",
+  email:"BhattaBKL@gmail.com",
+  
+}
+
+
+  const handlePost = async()=>{
+  fetch("http://localhost:3004/users",{
+      method:"POST",
+      headers:{
+        "Content-Type": "application/json" 
+           },
+      body:JSON.stringify(obj)
+      
+   
+    }).then((res)=>{
+      console.log(res);
+      console.log(obj);
+    
+    })
+   
+  }
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>State Management</h1>
+      <button onClick={getData}>Get Data in console</button>
+      <button onClick={handlePost}>Post</button>
+      {/* <button onClick={()=>setArr([])}>Clear Data</button> */}
+      <div className="container">
+        {
+          arr.map((item)=>{
+            return <Card key={item.id} image="https://www.w3schools.com/howto/img_avatar.png" username={item.name} useremail={item.email} />
+          }
+          )
+        }
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }
