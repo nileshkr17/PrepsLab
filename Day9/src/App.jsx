@@ -19,6 +19,7 @@ function App() {
 
   useEffect(() => {
     getData();
+    handleSearch();
   }, [])  
 
 const [search, setSearch] = useState("");
@@ -36,6 +37,7 @@ const handleSearch = async()=>{
   });
  
 }
+console.log(search);
 
 // const obj = {
 //   name:"Sonali Kumari",
