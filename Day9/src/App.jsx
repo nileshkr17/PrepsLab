@@ -30,24 +30,18 @@ const obj = {
   email:"BhattaBKL@gmail.com",
   
 }
-
-
-  const handlePost = async()=>{
-  fetch("http://localhost:3004/users",{
-      method:"POST",
-      headers:{
-        "Content-Type": "application/json" 
-           },
-      body:JSON.stringify(obj)
+const handlePost = async()=>{
+   await fetch("http://localhost:3004/users",{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(obj)
       
-   
-    }).then((res)=>{
-      console.log(res);
-      console.log(obj);
-    
-    })
-   
-  }
+  }.then((response)=>response.json())
+  .then((data)=>console.log(data))
+  )
+}
 
 
   return (
