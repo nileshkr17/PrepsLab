@@ -19,10 +19,28 @@ const getData=async()=>{
   useEffect(()=>{
     getData();
 },[])
+
+const updateClick=()=>{
+    fetch(`http://localhost:3004/photos`,{
+        method:'Patch',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({
+            title:'Updated Title',
+            body:'Updated Body'
+        })
+    })
+    .then((response)=>response.json())
+    .then((data)=>{
+        console.log(data);
+    })
+}
+// npx json-server --watch data/db.json --port 8000
+
   return (
     <div className="card-heading">
        <h1>State Management</h1>
-       {/* fetch arr map */}
          {arr.map((item)=>{
               return(
                  <div className="card" key={item.id}>
@@ -31,13 +49,11 @@ const getData=async()=>{
                 <p>{item.body}</p>
                 <button  href={item.thumbnailUrl}>Source</button>
                 <button onClick={getData}>Click me!</button>
-
+                <button onClick={updateClick}>Update</button>
                  </div>
               )
             })
             }
-
-       
     </div>
   )
 }
