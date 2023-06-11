@@ -13,12 +13,24 @@ function App() {
     fetchMovies(search);
   };
 
-  const fetchMovies = async (searchValue) => {
-    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=4a925a13`;
-    const response = await fetch(url);
+  // const fetchMovies = async (searchValue) => {
+  //   const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=4a925a13`;
+  //   const response = await fetch(url);
+  //   const data = await response.json();
+  //   console.log(data.Search);
+  //   setMovies(data.Search);
+  // };
+
+  const fetcgMovies = async (searchValue) => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users",{
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
     const data = await response.json();
-    console.log(data.Search);
-    setMovies(data.Search);
+    console.log(data);
+    setMovies(data);
   };
 
   useEffect(() => {
