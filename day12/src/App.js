@@ -7,8 +7,9 @@ import Nav from './pages/Nav/Nav';
 function App() {
   return (
     <>
-     <Nav/>
+       <Nav/>
     <Allroutes/>
+ 
     </>
    
   );
