@@ -1,45 +1,12 @@
-// import logo from './logo.svg';
-// import './App.css';
-//
-// import UseMemoExample from './components/UseMemoExample';
-// import
-// function App() {
-//   return (
-//    <>
-//    </>
-//   );
-// }
+import React from 'react'
+import Card from './Card'
+const App = () => {
 
-// export default App;
-
-
- // usememo example
-import React, { useState } from 'react';
-import './App.css';
-import { useMemo } from 'react';
- function App() {
-      const [number, setNumber] = useState(0);
-  const [dark, setDark] = useState(false);
-  const doubleNumber = useMemo(() => {
-    return slowFunction(number)
-  }, [number])
-
-  const themeStyles = useMemo(() => {
-    return {
-      backgroundColor: dark ? 'black' : 'white',
-      color: dark ? 'white' : 'black'
-    }
-  }, [dark])
   return (
-    <>
-      <input type="number"
-        value={number}
-        onChange={e => setNumber(parseInt(e.target.value))}
-      />
-      <button onClick={() => setDark(prevDark => !prevDark)}>Change Theme</button>
-      <div style={themeStyles}>{doubleNumber}</div>
-    </>
-
-  );
+    <div>
+     <Card title="Nileshh Memo" image={"https://images.unsplash.com/photo-1661956600654-edac218fea67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=436&q=80"}   />
+      </div>
+  )
 }
-export default App;
+
+export default App
