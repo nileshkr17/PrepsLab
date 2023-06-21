@@ -1,11 +1,13 @@
-const { fstat } = require('fs');
+// import port from .env
+require('dotenv').config();
+
 const http = require('http');
 
 const server = http.createServer((req,res)=>{
     res.end('Hello World');
 });
 
-server.listen(7888,()=>{
+server.listen(dot,()=>{
     console.log('Server is running on port 7888');
 });
 
