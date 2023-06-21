@@ -1,22 +1,22 @@
 const express = require('express');
 const {dbcnt} = require('./main');
-// const {UserModel} = require('./models/UserModel');
-// const {userRoute} = require('./Routes/UserRoute');
+// const userRoute = require('./routes/Route');
 const cors = require('cors');
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-// app.get("/users",userRoute);
-
-// app.use("/user",userRoute);
-
 app.get("/", (req, res) => {
     res.send("Hello World");
 }
 );
 
+app.get('/register',async(req,res)=>{
+    res.send("Register");
+})
+
+// app.use('/user',userRoute);
 app.listen(process.env.PORT ,async () => {
   try{
     await dbcnt();

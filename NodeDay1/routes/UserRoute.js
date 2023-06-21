@@ -1,12 +1,9 @@
-const express = require('express');
-const userRoute = require('../Routes/UserRoute');
-const {UserModel} = require('../models/UserModel');
-const cors = require('cors');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
-const userRouter = express.Router();
+// // userRoute 
+// const express = require('express');
+// const router = express.Router();
+// const {registerUser,loginUser} = require('../controllers/UserController');
 
-userRouter.get('/', async (req, res) => {
+// router.post('/register',registerUser);
+// router.post('/login',loginUser);
 
-});
-
+// module.exports = UserRouter;
