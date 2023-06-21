@@ -9,7 +9,6 @@ const UserSchema = new mongoose.Schema({
 const UserModel = mongoose.model("user", UserSchema);
 module.exports = { UserModel };
 
-
 // const UserModel: This creates a constant variable named UserModel to store the reference to the model object.
 // mongoose.model: This is a method provided by Mongoose to create a model based on a defined schema. 
 // It takes two arguments: the name of the model (in this case, "User") and the schema definition (in this case, UserSchema).
